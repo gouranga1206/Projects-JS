@@ -1,9 +1,15 @@
 let button = document.querySelector("#btn");
 let box = document.getElementById("box");
-
+let isToggle = true;
 button.addEventListener("click", ()=>{
-
-    box.style.display = (box.style.display ="none") ? "block" : "none";
+    if(isToggle){
+        box.style.display ="block";
+        isToggle =false;
+    }
+    else{
+        box.style.display="none";
+        isToggle=true;
+    }
     
 }
 )
